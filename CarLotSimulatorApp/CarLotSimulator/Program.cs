@@ -24,11 +24,7 @@ namespace CarLotSimulator
 
             //*************BONUS X 2*************//
 
-            //Create a CarLot class
-            //It should have at least one property: a List of cars
-            //Instanciate the a Carlot at the beginning of the program and as you create a car add the car to the list.
-            //At the end iterate through the list printing each of car's Year, Make, and Model to the console
-            //using .Notation
+           
             Car firstCar = new Car();
             firstCar.Make = ("Ford");
             firstCar.Model = "Mustang";
@@ -36,6 +32,8 @@ namespace CarLotSimulator
             firstCar.IsDrivable = false;
             firstCar.EngineNoise = "Click Clank Bonk Pow";
             firstCar.HonkNoise = "BeepBeep";
+            Console.WriteLine($"THere is this many {CarLot.numberOfCars} cars u=in my lot.");
+            //Console.WriteLine($"Make: {firstCar.Make}, Model: {firstCar.Model}, Year: {firstCar.Year}, Is drivable: {firstCar.IsDrivable}, Enigine Noise: {firstCar.EngineNoise}, Horn Sound: {firstCar.HonkNoise}");
             //using objest Initializer Syntax
             Car secondCar = new Car()
             {
@@ -45,17 +43,12 @@ namespace CarLotSimulator
                 IsDrivable = true,
                 EngineNoise = "Nothing",
                 HonkNoise = "Honk!!!"
-
+                
             };
+            Console.WriteLine($"There is this many {CarLot.numberOfCars} cars in my lot.");
             //Custom Constructor
             Car thirdCar = new Car("lamborghini", "Hurcan STO", 2022);
-            
-
-            
-
-           
-
-
+            Console.WriteLine($"There is this many {CarLot.numberOfCars} cars in my lot.");
         }
     }
 }
